@@ -44,9 +44,9 @@ export const Compare = () => {
             <th>Price</th>
             <th>Rating</th>
           </tr>
-          {products.map((product) => {
+          {products.map((product, index) => {
             return (
-              <tr>
+              <tr key={`table-data-${index}`}>
                 <td>{product.name}</td>
                 <td>{product.price}</td>
                 <td>{product.ratings}</td>
